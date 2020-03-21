@@ -8,10 +8,14 @@ public class ButtonScript : MonoBehaviour
     public Image theButton = null;
     public GameObject nextSlide = null;
 
+    private void Awake()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
-        theButton.alphaHitTestMinimumThreshold = 0.0001f;
+        
     }
 
     // Update is called once per frame
