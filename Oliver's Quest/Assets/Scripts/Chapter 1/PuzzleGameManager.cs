@@ -10,6 +10,7 @@ public class PuzzleGameManager : MonoBehaviour
     [SerializeField] private PuzzlePieceThreeScript scriptThree = null;
     [SerializeField] private PuzzlePieceFourScript scriptFour = null;
     [SerializeField] private GameObject continueButton = null;
+    [SerializeField] private GameObject congratsText = null;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class PuzzleGameManager : MonoBehaviour
         if(scriptOne.GetLocked() && scriptTwo.GetLocked() && scriptThree.GetLocked() && scriptFour.GetLocked())
         {
             continueButton.SetActive(true);
+            congratsText.SetActive(true);
         }
     }
 }
