@@ -9,7 +9,6 @@ public class PuzzlePieceOneScript : MonoBehaviour
     [SerializeField] private float deltaX, deltaY;
 
     public static bool locked;
-    public static bool letGo;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +79,7 @@ public class PuzzlePieceOneScript : MonoBehaviour
                 locked = true;
             }
         }
+
         if (!Input.GetMouseButton(0) && !locked)
         {
             transform.position = initialPosition;
