@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -24,5 +25,10 @@ public class MainMenuScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void loadStart(string chapter)
+    {
+        SceneManager.LoadScene(chapter);
     }
 }
